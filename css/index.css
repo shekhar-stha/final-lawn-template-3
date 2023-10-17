@@ -655,9 +655,10 @@ nav ul .nav-item .dropdown-item {
   align-items: start;
   gap: 3rem;
 }
+
 @media (max-width: 450px) {
   .services .service-grid .service .flex {
-  flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -762,12 +763,13 @@ nav ul .nav-item .dropdown-item {
   justify-content: space-between;
   margin-bottom: 1.5rem
 }
+
 @media (max-width: 390px) {
   .testimonials .testimonial .testimonial-overview {
-   flex-direction: column;
+    flex-direction: column;
   }
 
-  .testimonials .testimonial .testimonial-overview .platform-name{
+  .testimonials .testimonial .testimonial-overview .platform-name {
     margin-top: 1rem;
   }
 }
@@ -1152,6 +1154,7 @@ footer .popup-flex {
   footer {
     padding-top: 10rem;
   }
+
   footer .popup-flex {
     top: -8%;
   }
