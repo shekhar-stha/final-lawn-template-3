@@ -25,29 +25,28 @@
 </head>
 
 <body>
-    <!-- Navabr and Hero Section -->
-    <section class="nav-hero inner-page position-relative" style="overflow: visible !important; overflow-x: hidden;">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-xl navbar-dark " data-aos="fade-up">
+    <!-- Navbar -->
+    <section class="overflow-visible">
+        <nav id="navbar" class="navbar navbar-expand-xl navbar-light " data-aos="fade-up">
             <div class="container">
                 <a title="Homepage" class="navbar-brand" href="/index.html"><img class="logo" src="/img/logo.png"
                         alt="Navbar Transparent Logo"></a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa-solid fa-bars-staggered fa-18"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ps-xl-4 ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a title="Home" class="nav-link ms-0" aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a title="Dropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown 1
+                                Lawn Services
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a title="Sub 1" class="dropdown-item" href="#">Sub 1</a>
@@ -58,7 +57,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a title="Navigation" class="nav-link" href="/">Navigation </a>
+                            <a title="Contact Page" class="nav-link" href="#">Landscaping Services</a>
                         </li>
                         <li class="nav-item">
                             <a title="Contact Page" class="nav-link" href="/contact.html">Contact</a>
@@ -66,28 +65,12 @@
                     </ul>
 
                     <a title="Free Estimate CTA"
-                        class="nav-button btn btn-primary fw-500 text-white px-xxl-5 px-4 fs-19 text-white"
+                        class="nav-button btn btn-primary fw-500 ms-xl-4 text-white px-xxl-5 px-4 fs-19 text-white"
                         href="/cta.html">
                         Call Now</a>
                 </div>
             </div>
         </nav>
-        <!-- /Navbar -->
-
-        <!-- Hero Section -->
-        <div class="hero" data-aos="fade-down">
-            <!-- Container for Hero Content -->
-            <div class="container hero-content py-3 pb-5">
-                <!-- Main Heading -->
-                <h1 class="text-center">Contact Us</h1>
-
-            </div>
-        </div>
-        <!-- /Hero Section -->
-
-
-        <!-- Background Image behind hero sections -->
-        <img class="hero-img" src="/img/hero-bg.jpg" alt="Hero background Image">
     </section>
 
     <!-- Contact Info -->
@@ -97,7 +80,7 @@
                 <div class="info-side dark-section px-5">
                     <div>
                         <h3 class="header">
-                           Contact Us
+                            Contact Us
                         </h3>
                         <p class="contact-paragraph">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
@@ -122,7 +105,29 @@
     </section>
 
     <!-- Footer -->
-    <footer class="position-relative pt-3">
+    <footer class="position-relative">
+        <div class="popup-flex">
+            <a href="tel:+11111111111" title="Phone Number" class="popup">
+                <div class="icon-div">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <p href="tel:+11111111111">+1 (111) 111-1111</p>
+            </a>
+
+            <a href="#" title="Location" class="popup">
+                <div class="icon-div">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <p>Austin, Texas</p>
+            </a>
+
+            <a title="Facebook Navigation" class="popup">
+                <div class="icon-div">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <p>Facebook</p>
+            </a>
+        </div>
         <div class="container mt-5">
             <div class="logo-div navbar-brand d-flex justify-content-center">
                 <img class="mx-auto logo" src="/img/logo.png" alt="logo">
@@ -143,13 +148,15 @@
                 our licensors. Copying any content, including images, without our consent is prohibited.</p>
         </div>
     </footer>
-    
+
+
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <script src="/js/extra.js"></script>
     <script src="/js/index.js"></script>
+
 </body>
 
 </html>

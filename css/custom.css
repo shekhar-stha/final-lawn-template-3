@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Color Set */
 :root {
   --primary: rgb(138, 184, 64);
@@ -14,6 +15,7 @@
   --white: #ffffff;
   --creamWhite: rgb(247, 242, 237);
   --body: #f8f6f4;
+  --ash: #3d3d3d;
 
   /* Headline */
   --headline-font: 'poppins', sans-serif;
@@ -41,6 +43,7 @@
 
   /* Navigation */
   --homepage-navbar-background-color: var(--white);
+  --navbar-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   --navigation-link-background: none;
   --navigation-link-color: var(--dark);
   --navigation-link-border-color: var(--primary);
@@ -55,7 +58,8 @@
   --upper-nav-bg-color: var(--primary);
 
   /* Hero */
-  --hero-overlay: linear-gradient(to right, #101900, #001701, #101700, #020f0a, #000000);
+  --hero-bg-left: linear-gradient(to right, #101900, #001701, #101700, #020f0a, #000000);
+  --hero-bg-right-overlay: rgb(138, 184, 64, 0.6);
   --hero-heading-color: var(--white);
   --hero-font-size: 50px;
   --hero-font-weight: 600;
@@ -67,14 +71,15 @@
   --hero-primary-button: var(--primary);
   --hero-primary-button-text: var(--white);
   --hero-secondary-button: transparent;
-  --hero-secondary-button-text: var(--primary) ;
+  --hero-secondary-button-text: var(--primary);
   --hero-btn-border-radius: 6px;
-  
+
   /* Global */
   --services-background-after-effects-color: rgb(216, 238, 199);
-  --light-primary-bg: #b9df95;
+  --light-primary-bg: #e7f5d0;
   --testimonials-after-effects: rgb(138, 184, 64, 0.9);
-  --primary-opacity-color: rgb(138, 184, 64, 0.9);
+  --primary-opacity-background: rgb(138, 184, 64, 0.7);
+  --normal-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   /* Light Section */
   --light-section-background: var(--body);
@@ -168,8 +173,8 @@
   color: var(--white) !important;
 }
 
-.light-section .btn{
-    border-radius: var(--light-section-button-border-radius) !important;
+.light-section .btn {
+  border-radius: var(--light-section-button-border-radius) !important;
 }
 
 .light-section .link {
@@ -292,10 +297,10 @@
   color: var(--ahref-hover-color);
 }
 
-.lb-nav a.lb-next{
+.lb-nav a.lb-next {
   background: url(/img/next-chevron.png) right 48% no-repeat !important;
 }
 
-.lb-nav a.lb-prev{
+.lb-nav a.lb-prev {
   background: url(/img/prev-chevron.png) left 48% no-repeat !important;
 }
