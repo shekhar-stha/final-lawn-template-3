@@ -564,7 +564,7 @@ nav ul .nav-item .dropdown-item {
   z-index: 2;
   cursor: pointer;
   overflow: visible;
-  background-color: #f2fde7;
+  /* background-color: #f2fde7; */
   /* background-color: var(--dark); */
 }
 
@@ -755,10 +755,20 @@ nav ul .nav-item .dropdown-item {
 
 /* Why Us */
 .why-us {
-  background-color: rgb(237, 248, 221);
-  /* background-color: var(--dark); */
+  /* background-color: rgb(237, 248, 221); */
+  background-color: var(--dark);
   padding: 3rem 0;
   position: relative;
+}
+
+.bg-pattern{
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  object-fit: cover;
 }
 
 .why-us::after {
@@ -766,9 +776,10 @@ nav ul .nav-item .dropdown-item {
   position: absolute;
   width: 30%;
   height: 100%;
-  background-color: var(--primary);
+  background-color: rgb(138, 184, 64, 0.6);
   right: 0;
   top: 0;
+  z-index: 1;
 }
 
 .why-us .flex {
