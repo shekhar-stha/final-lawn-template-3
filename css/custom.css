@@ -80,6 +80,9 @@
   --testimonials-after-effects: rgb(138, 184, 64, 0.9);
   --primary-opacity-background: rgb(138, 184, 64, 0.7);
   --normal-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --services-icon-filter: none;
+  --services-icon-hover-filter: none;
+
 
   /* Light Section */
   --light-section-background: var(--body);

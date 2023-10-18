@@ -667,6 +667,15 @@ nav ul .nav-item .dropdown-item {
   z-index: 2;
 }
 
+.services .service-grid .service .icon-div img{
+  max-width: 4rem;
+  filter: var(--services-icon-filter);
+}
+
+.services .service-grid .service .icon-div img{
+  max-width: 4rem;
+}
+
 .services .service-grid .service .icon-div::after {
   content: "";
   position: absolute;
@@ -683,6 +692,11 @@ nav ul .nav-item .dropdown-item {
 .services .service-grid .service:hover .icon-div::after {
   background-color: var(--white);
 }
+
+.services .service-grid .service:hover .icon-div img {
+  filter: var(--services-icon-hover-filter);
+}
+
 
 .services .service-grid .service .info-div h4 {
   font-weight: 600;
@@ -918,6 +932,7 @@ nav ul .nav-item .dropdown-item {
 .why-us .img-div img {
   border-radius: 6px;
   width: 100%;
+  min-height: 360px;
 }
 
 @media (max-width:1200px) {
@@ -1530,7 +1545,7 @@ p {
 
 .btn-primary:hover {
   color: var(--primary);
-  background-color: transparent;
+  background-color: var(--primary);
   border: 2px solid var(--primary);
 }
 
